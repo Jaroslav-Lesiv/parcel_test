@@ -1,0 +1,43 @@
+.contacts.flex.flex-justify-sa
+    .contact-block.flex.flex-column
+        h2.contact-title My Contact
+        ul.flex.flex-column.contact-list
+            li.contact-list-item.flex.flex-align-center
+                img.contact-logo(src="./img/icon/location.png")
+                .flex.flex.justify-start.flex-column
+                    strong Location
+                    p Economicheska 12, Kherson, Ukrain
+            
+            li.contact-list-item.flex.flex-align-center
+                img.contact-logo(src="./img/icon/mail.png")
+                .flex.flex.justify-start.flex-column
+                    strong Email
+                    a.link.snake(href="mailto:jaroslav_lesiv@hotmail.com") jaroslav_lesiv@hotmail.com
+            
+            li.contact-list-item.flex.flex-align-center
+                img.contact-logo(src="./img/icon/telephone.png")
+                .flex.flex.justify-start.flex-column
+                    strong Telephone
+                    p +380951620180
+            li.contact-list-item.flex.flex-align-center
+                img.contact-logo(src="./img/icon/chipmunk.png")
+                .flex.flex.justify-start.flex-column
+                    strong My team
+                    a.link.snake(href="https://codingchipmunks.com/") CodingChipmunks
+    form.contact-block.flex.flex-column
+        h2.contact-title Send Message
+        ul.flex.flex-column.contact-list
+            li.flex.flex-align-start
+                .contact-list-item.flex.flex-align-start.flex-grow.compose
+                    .flex.flex.justify-start.flex-column.full-width
+                        strong Name
+                        input.ipt(type="text", name="name", placeholder="John", id="name")
+                .contact-list-item.flex.flex-align-start.flex-grow.compose
+                    .flex.flex.justify-start.flex-column.full-width
+                        strong Email
+                        input.ipt(type="email", name="mail", required, placeholder="email@example.com", id="email")
+            li.contact-list-item.flex.flex-align-center.flex-column
+                strong.text-left Message
+                textarea.ipt(type="text", name="name", placeholder="Type your messages...", id="name", rows="10", style="resize: none")
+            li.contact-list-item.flex.flex-align-center
+                button.btn.btn-primary(type="submit") Send messages

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+html(lang="en")
+  include ./includes/head.pug
+  
+  body
+    //- #background.background
+    .wrapper
+      include ./includes/nav.pug
+      
+      main.main
+        section.section
+          #particles-js.particles-js
+          #about.container.flex-justify-sa.flex-align-center
+            include ./includes/about.pug
+        #skills.container.flex-align-center.flex-justify-sa.section-rotate.section-dark
+          include ./includes/skills.pug
+        #examples.container.flex-align-top.flex-justify-sa
+          include ./includes/examples.pug
+
+        #services.container.flex-align-center.flex-justify-sa.section-rotate.section-dark.section-rotate-not-rotateContent
+          include ./includes/services.pug
+        #contacts.container.flex-align-center.flex-justify-sa
+            include ./includes/contacts.pug
+        
+    script(src="assets/js/particles.js")
+    script(src="assets/js/main.js")
+    
+    
+        

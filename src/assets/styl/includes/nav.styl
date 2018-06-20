@@ -1,0 +1,64 @@
+.nav
+    position fixed
+    left 0
+    top 0
+    bottom: 0
+    width: ($navWidth)px
+    min-height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: $dark
+    flex-wrap: wrap
+    z-index: 10
+    transition: 0.1s
+    background: linear-gradient(45deg, rgba(5,81,84,0.9) 0%, rgba(0,128,128,1) 100%); /* w3c */
+    &.transform
+        background-color: $dark
+    .list
+        z-index: 1
+        &-item
+            a
+                font-size: 12px
+
+    @media all and (max-width 991px)
+        position: fixed
+        top: 0
+        left: 0
+        right: 0
+        min-height: 60px
+        background-color: rgba($primary, .5)
+        width: 80vw
+        transition: ($duration)s
+        transform: translateX(-1000px)
+        &.active
+            transform: translateX(0)
+    &-links
+        width: 100%
+        margin-top: auto
+        ul
+            li
+                .icon
+                    font-size: 50px
+                    margin: 0 10px 25px
+                    cursor pointer
+                    color: #ffffff
+                    &:hover
+                        color: $primary
+
+.logo
+    width: 150px
+    height: 150px
+    max-height: 150px
+    border-radius: 50%
+    border: 8px solid $secondary
+    overflow: hidden
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
+    transition: ($duration)s
+    box-shadow: $boxShadow
+    z-index: 1
+    &:hover
+        transform: scale(1.2)
+        box-shadow: $boxShadowHovered

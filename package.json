@@ -1,0 +1,22 @@
+{
+  "name": "personal-pages",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "parcel watch src/index.pug",
+    "build": "parcel src/index.pug"
+  },
+  "author": "Jaroslav_Lesiv",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^1.9.2",
+    "posthtml-img-autosize": "^0.1.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
+}
